@@ -2,19 +2,167 @@
 <html lang="en">
 
 <head>
-    <title>Tommyswf.com - Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-like Website</title>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #167ac6;
+        }
+        
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #e7e7e7;
+            padding: 16px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        #logo {
+            flex-grow: 1;
+        }
+        
+        #search-bar {
+            flex-grow: 2;
+            text-align: center;
+        }
+        
+        #user-menu {
+            flex-grow: 1;
+            text-align: right;
+        }
+        
+        /* Main content styles */
+        main {
+            padding: 32px;
+        }
+        
+        section {
+            margin-bottom: 32px;
+        }
+        
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+        }
+        
+        .video {
+            width: 240px;
+            text-align: center;
+        }
+        
+        .video img {
+            width: 100%;
+            height: 135px;
+            object-fit: cover;
+        }
+        
+        .video h3 {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: #f8f8f8;
+            border-top: 1px solid #e7e7e7;
+            padding: 16px;
+            text-align: center;
+        }
+        
+        #footer-links a {
+            margin: 0 8px;
+        }
+    </style>
 </head>
 
-  
-  
-  <body>
-    
-    
-    <h2> tommyswf </h2>
-    
-  </body>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <!-- Add your website logo here -->
+                <h1>Website Logo</h1>
+            </div>
+            <div id="search-bar">
+                <!-- Add a search form -->
+                <form action="" method="GET">
+                    <input type="text" name="search" placeholder="Search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div id="user-menu">
+                <!-- Add user menu options (login, upload, etc.) -->
+                <a href="#">Login</a>
+                <a href="#">Upload</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="featured-videos">
+            <h2>Featured Videos</h2>
+            <div class="video-container">
+                <!-- Add video thumbnails and titles here -->
+                <div class="video">
+                    <img src="video-thumbnail-1.jpg" alt="Video thumbnail">
+                    <h3>Video Title 1</h3>
+                </div>
+                <div class="video">
+                    <img src="video-thumbnail-2.jpg" alt="Video thumbnail">
+                    <h3>Video Title 2</h3>
+                </div>
+                <!-- Add more videos as needed -->
+            </div>
+        </section>
+
+        <section id="recently-uploaded">
+            <h2>Recently Uploaded</h2>
+            <div class="video-container">
+                <!-- Add video thumbnails and titles here -->
+                <div class="video">
+                    <img src="video-thumbnail-3.jpg" alt="Video thumbnail">
+                    <h3>Video Title 3</h3>
+                </div>
+                <div class="video">
+                    <img src="video-thumbnail-4.jpg" alt="Video thumbnail">
+                    <h3>Video Title 4</h3>
+                </div>
+                <!-- Add more videos as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-links">
+            <!-- Add footer links and copyright information -->
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <p>&copy; 2023 Your Website Name</p>
+        </div>
+    </footer>
+</body>
+
 </html>
